@@ -1,0 +1,105 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import "reset.css";
+
+body {
+    background-color: mintcream;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+#blog article {
+    margin-top: 2rem;
+    width: 50%;
+}
+
+@media (max-width: 1024px) {
+    #blog article {
+        width: 85%;
+    }
+}
+
+.post-title {
+    display: flex;
+    align-items: center;
+}
+
+.post-title a {
+    text-decoration: none;
+    color: steelblue;
+    margin-left: .5rem;
+}
+
+.post-title a:last-child {
+    color: red;
+}
+
+.post-title > div {
+    margin-left: auto;
+}
+
+.post-author {
+    margin: .5rem 0;
+}
+
+.post-excerpt {
+    margin-bottom: 1em;
+}
+
+.post-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-detail > h1 {
+    margin-bottom: 1rem;
+}
+
+input, textarea {
+    display: block;
+    padding: .75rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    min-width: 600px;
+}
+
+label {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 1rem 0;
+}
+
+.btn {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: .3rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: steelblue;
+}
+
+.btn-delete {
+    background-color: indianred;
+}

@@ -1,0 +1,4 @@
+Django==3.2.4
+django-livereload-server==0.3.2
+Pillow==8.2.0
+psycopg2-binary==2.9.1
